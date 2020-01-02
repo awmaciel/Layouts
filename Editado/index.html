@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minoral 1.3 - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/rickshaw.min.css">
+    <link rel="stylesheet" href="css/bootstrap-checkbox.css">
+    <link rel="stylesheet" href="css/summernote.css">
+    <link rel="stylesheet" href="css/summernote-bs3.css">
+    <link rel="stylesheet" href="css/chosen.min.css">
+    <link rel="stylesheet" href="css/chosen-bootstrap.css">
+    <link rel="stylesheet" href="js/plugins/tabdrop/css/tabdrop.css">
+    <link rel="stylesheet" href="css/morris.css">
+    <link href="css/minoral.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/TableTools.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="brownish-scheme">
+
+    <!-- Preloader -->
+    <div class="mask"><div id="loader"></div></div>
+    <!--/Preloader -->
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Make page fluid -->
+      <div class="row">
+
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          
+
+
+          <!-- Branding -->
+          <div class="navbar-header col-md-2">
+            <a class="navbar-brand" href="index.html">
+              <strong>MIN</strong> <span class="divider vertical"></span> ORAL
+            </a>
+            <div class="sidebar-collapse">
+              <a href="#">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Branding end -->
+
+
+          <!-- .nav-collapse -->
+          <div class="navbar-collapse">
+            
+
+            
+
+            <!-- Content collapsing at 768px to sidebar -->
+            <div class="collapsing-content">
+
+
+              <!-- User Controls -->
+              <div class="user-controls">
+                <ul>
+
+                 
+                  <li class="dropdown messages">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <span class="badge badge-red" id="user-new-messages">3</span> John <strong>Douey</strong> <i class="fa fa-angle-down"></i>
+                    </a>
+                    <div class="profile-photo">
+                      <img src="images/profile-photo.jpg" alt />
+                    </div>
+                    <ul class="dropdown-menu wide arrow red nopadding">
+                      <li><h1>You have <strong>3</strong> new messages</h1></li>
+
+                      <li>
+                        <a class="cyan" href="#">
+                          <div class="profile-photo">
+                            <img src="images/ici-avatar.jpg" alt />
+                          </div>
+                          <div class="message-info">
+                            <span class="sender">Ing. Imrich Kamarel</span>
+                            <span class="time">12 mins</span>
+                            <div class="message-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="green" href="#">
+                          <div class="profile-photo">
+                            <img src="images/arnold-avatar.jpg" alt />
+                          </div>
+                          <div class="message-info">
+                            <span class="sender">Arnold Karlsberg</span>
+                            <span class="time">1 hour</span>
+                            <div class="message-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="profile-photo">
+                            <img src="images/profile-photo.jpg" alt />
+                          </div>
+                          <div class="message-info">
+                            <span class="sender">John Douey</span>
+                            <span class="time">3 hours</span>
+                            <div class="message-content">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="red" href="#">
+                          <div class="profile-photo">
+                            <img src="images/peter-avatar.jpg" alt />
+                          </div>
+                          <div class="message-info">
+                            <span class="sender">Peter Kay</span>
+                            <span class="time">5 hours</span>
+                            <div class="message-content">Ut enim ad minim veniam, quis nostrud exercitation</div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="orange" href="#">
+                          <div class="profile-photo">
+                            <img src="images/george-avatar.jpg" alt />
+                          </div>
+                          <div class="message-info">
+                            <span class="sender">George McCain</span>
+                            <span class="time">6 hours</span>
+                            <div class="message-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                          </div>
+                        </a>
+                      </li>
+
+
+                      <li><a href="#">Check all messages <i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown settings">
+                    <a class="dropdown-toggle options" data-toggle="dropdown" href="#">
+                      <i class="fa fa-cog"></i>
+                    </a>
+                    
+                    <ul class="dropdown-menu arrow">
+
+                      <li>
+                        <h3>Color schemes:</h3>
+                        <ul id="color-schemes">
+                          <li><a href="#" class="brownish-scheme" title="Brownish"></a></li>
+                          <li><a href="#" class="darkgrey-scheme" title="Dark Grey"></a></li>
+                          <li><a href="#" class="lightgrey-scheme" title="Light Grey"></a></li>
+                          <li><a href="#" class="cyan-scheme" title="Cyan"></a></li>
+                          <li><a href="#" class="red-scheme" title="Red"></a></li>
+                          <li><a href="#" class="orange-scheme" title="Orange"></a></li>
+                          <li><a href="#" class="green-scheme" title="Green"></a></li>
+                          <li><a href="#" class="amethyst-scheme" title="Amethyst"></a></li>
+                        </ul>
+                      </li>
+
+                      <li class="divider"></li>
+
+                      <li>
+                        <a href="#"><i class="fa fa-user"></i> Profile</a>
+                      </li>
+
+                      <li>
+                        <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+                      </li>
+
+                      <li>
+                        <a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge badge-red" id="user-inbox">3</span></a>
+                      </li>
+
+                      <li class="divider"></li>
+
+                      <li>
+                        <a href="#"><i class="fa fa-power-off"></i> Logout</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+              <!-- User Controls end -->
+
+            
+
+
+
+            </div>
+            <!-- /Content collapsing at 768px to sidebar -->
+
+
+
+            <!-- Sidebar -->
+            <ul class="nav navbar-nav side-nav" id="navigation">
+              <li class="collapsed-content">
+                <!-- Collapsed content pasting here at 768px -->
+              </li>
+              <li class="user-status status-online" id="user-status">
+                <div class="profile-photo">
+                  <img src="images/profile-photo.jpg" alt />
+                </div>
+                <div class="user">
+                  John <strong>Douey</strong>
+                  <span class="role">Administrator</span>
+                  <div class="status">
+                    <ul>
+                      <li class="dropdown change-status">
+                        <a class="dropdown-toggle my-status" data-toggle="dropdown" href="#">Online</a>
+                        
+                        <ul class="dropdown-menu arrow">
+                          <li>
+                            <a href="#" id="status-online" data-status="status-online">Online</a>
+                          </li>
+
+                          <li>
+                            <a href="#" id="status-away" data-status="status-away">Away</a>
+                          </li>
+
+                          <li>
+                            <a href="#" id="status-invisible" data-status="status-invisible">Invisible</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown open">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Dashboard">
+                  <i class="fa fa-dashboard">
+                    <span class="overlay-label red"></span>
+                  </i> 
+                  Dashboard <b class="fa fa-angle-left dropdown-arrow"></b>
+                  <span class="badge badge-cyan">1</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="active">
+                    <a href="index.html" title="Overview">
+                      <i class="fa fa-eye"><span class="overlay-label red80"></span></i>
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mail.html" title="Inbox">
+                      <i class="fa fa-envelope"><span class="overlay-label red60"></span></i>
+                      Inbox
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Forms">
+                  <i class="fa fa-list">
+                    <span class="overlay-label green"></span>
+                  </i>
+                  Forms <b class="fa fa-angle-left dropdown-arrow"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="form-elements.html" title="Common Elements">
+                      <i class="fa fa-thumb-tack"><span class="overlay-label green80"></span></i>
+                      Common Elements
+                    </a>
+                  </li>
+                  <li>
+                    <a href="validation-elements.html" title="Validation">
+                      <i class="fa fa-check-square"><span class="overlay-label green60"></span></i>
+                      Validation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="form-wizard.html"  title="Form Wizard">
+                      <i class="fa fa-shield"><span class="overlay-label green40"></span></i>
+                      Form Wizard
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Interface">
+                  <i class="fa fa-pencil">
+                    <span class="overlay-label amethyst"></span>
+                  </i>
+                  Interface <b class="fa fa-angle-left dropdown-arrow"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="ui-elements.html" title="UI Elements">
+                      <i class="fa fa-puzzle-piece"><span class="overlay-label amethyst80"></span></i>
+                      UI Elements
+                    </a>
+                  </li>
+                  <li>
+                    <a href="typography.html" title="Typography">
+                      <i class="fa fa-font"><span class="overlay-label amethyst60"></span></i>
+                      Typography
+                    </a>
+                  </li>
+                  <li>
+                    <a href="nestable.html" title="Nestable Lists">
+                      <i class="fa fa-arrows"><span class="overlay-label amethyst40"></span></i>
+                      Nestable Lists
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tiles.html" title="Tiles">
+                      <i class="fa fa-th"><span class="overlay-label amethyst40"></span></i>
+                      Tiles
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="buttons.html" title="Buttons & Icons">
+                  <i class="fa fa-tint">
+                    <span class="overlay-label orange"></span>
+                  </i>
+                  Buttons & Icons
+                </a>
+              </li>
+              <li>
+                <a href="grid.html" title="Grid Layout">
+                  <i class="fa fa-th">
+                    <span class="overlay-label cyan"></span> 
+                  </i>
+                  Grid Layout
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Tables">
+                  <i class="fa fa-th-large">
+                    <span class="overlay-label greensea"></span>
+                  </i>
+                  Tables <b class="fa fa-angle-left dropdown-arrow"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="tables.html" title="Bootstrap Tables">
+                      <i class="fa fa-puzzle-piece"><span class="overlay-label greensea80"></span></i>
+                      Bootstrap Tables
+                    </a>
+                  </li>
+                  <li>
+                    <a href="datatables.html" title="DataTables">
+                      <i class="fa fa-lightbulb-o"><span class="overlay-label greensea60"></span></i>
+                      DataTables
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Example Pages">
+                  <i class="fa fa-desktop">
+                    <span class="overlay-label drank"></span>  
+                  </i>
+                  Example Pages <b class="fa fa-angle-left dropdown-arrow"></b>
+                  <span class="label label-greensea">mails</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="login.html" title="Login Page">
+                      <i class="fa fa-user"><span class="overlay-label drank80"></span></i>
+                      Login Page
+                    </a>
+                  </li>
+                  <li>
+                    <a href="calendar.html" title="Calendar">
+                      <i class="fa fa-calendar"><span class="overlay-label drank60"></span></i>
+                      Calendar
+                    </a>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown-submenu" title="Mail">
+                      <i class="fa fa-exclamation-circle"><span class="overlay-label drank40"></span></i>
+                      Error Pages <b class="fa fa-angle-left dropdown-arrow"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="page404.html" title="Page 404">
+                          <i class="fa fa-level-up"></i>
+                          Page 404
+                        </a>
+                      </li>
+                      <li>
+                        <a href="page403.html" title="Page 403">
+                          <i class="fa fa-level-up"></i>
+                          Page 403
+                        </a>
+                      </li>
+                      <li>
+                        <a href="page500.html" title="Page 500">
+                          <i class="fa fa-level-up"></i>
+                          Page 500
+                        </a>
+                      </li>
+                      <li>
+                        <a href="page503.html" title="Page 503">
+                          <i class="fa fa-level-up"></i>
+                          Page 503
+                        </a>
+                      </li>
+                      <li>
+                        <a href="page-offline.html" title="Page Offline">
+                          <i class="fa fa-level-up"></i>
+                          Offline
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="gallery.html" title="Gallery">
+                      <i class="fa fa-camera"><span class="overlay-label drank20"></span></i>
+                      Gallery
+                    </a>
+                  </li>
+                  <li>
+                    <a href="timeline.html" title="Timeline">
+                      <i class="fa fa-clock-o"><span class="overlay-label drank20"></span></i>
+                      Timeline
+                    </a>
+                  </li>
+                  <li>
+                    <a href="chat.html" title="Chat">
+                      <i class="fa fa-comments"><span class="overlay-label drank20"></span></i>
+                      Chat
+                    </a>
+                  </li>
+                  <li>
+                    <a href="search-result.html" title="Search Results">
+                      <i class="fa fa-search"><span class="overlay-label drank20"></span></i>
+                      Search Results
+                    </a>
+                  </li>
+                  <li>
+                    <a href="nav-right.html" title="RTL Direction">
+                      <i class="fa fa-align-right"><span class="overlay-label drank20"></span></i>
+                      RTL Direction
+                    </a>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown-submenu" title="Mail">
+                      <i class="fa fa-envelope"><span class="overlay-label drank20"></span></i>
+                      Mail <b class="fa fa-angle-left dropdown-arrow"></b>
+                      <span class="label label-greensea">mails</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="mail.html" title="Vertical View">
+                          <i class="fa fa-level-up"></i>
+                          Vertical View
+                          <span class="label label-greensea">mails</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mail-horizontal.html" title="Horizontal View">
+                          <i class="fa fa-level-up"></i>
+                          Horizontal View
+                          <span class="badge badge-red">3</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown-submenu" title="Maps">
+                      <i class="fa fa-map-marker"><span class="overlay-label drank20"></span></i>
+                      Maps <b class="fa fa-angle-left dropdown-arrow"></b>
+                      <span class="badge badge-red">2</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="vector-maps.html" title="Vector Maps">
+                          <i class="fa fa-level-up"></i>
+                          Vector Maps
+                        </a>
+                      </li>
+                      <li>
+                        <a href="google-maps.html" title="Google Maps">
+                          <i class="fa fa-level-up"></i>
+                          Google Maps
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="widgets.html" title="Widgets">
+                  <i class="fa fa-play-circle">
+                    <span class="overlay-label hotpink"></span>  
+                  </i>
+                  Widgets
+                </a>
+              </li>
+              <li>
+                <a href="charts.html" title="Charts & Graphs">
+                  <i class="fa fa-bar-chart-o">
+                    <span class="overlay-label dutch"></span>  
+                  </i>
+                  Charts & Graphs
+                </a>
+              </li>
+            </ul>
+            <!-- Sidebar end -->
+
+
+
+
+
+          </div>
+          <!--/.nav-collapse -->
+
+
+
+
+
+        </div>
+        <!-- Fixed navbar end -->
+        
+
+
+
+
+        
+        <!-- Page content -->
+        <div id="content" class="col-md-12">
+          
+
+
+
+
+
+
+
+
+          <!-- breadcrumbs -->
+          <div class="breadcrumbs">
+            <ol class="breadcrumb">
+              <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+              <li><a href="index.html">Dashboard</a></li>
+              <li class="active">Overview</li>
+            </ol>
+          </div>
+          <!-- /breadcrumbs -->
+
+
+
+
+
+
+
+          <!-- submenu -->
+          <div class="submenu">
+            <h1>Dashboard</h1>
+            <div class="collapsed">
+              <a href="#" id="submenutoggle"><h1>Dashboard <i class="fa fa-bars"></i></h1></a>
+            </div>
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="index.html">Overview</a></li>
+              <li><a href="mail.html">Inbox</a></li>
+            </ul>
+          </div>
+          <!-- /submenu -->
+
+
+          
+          
+
+
+
+
+          <!-- content main container -->
+          <div class="main">
+
+            <!-- row -->
+            <div class="row">
+
+              <!-- col 8 -->
+              <div class="col-lg-12 col-md-12">
+
+                <!-- tile -->
+                <section class="tile cornered">
+
+
+                  <!-- tile widget -->
+                  <!--div class="tile-widget color greensea">
+                    <div id="statistics-chart" class="chart statistics" style="height: 250px;"></div>
+                  </div-->
+                  
+
+                </section>
+                <!-- /tile -->
+
+
+
+
+
+
+              </div>
+              <!-- /col 8-->
+
+              
+
+
+              <!-- col 4 -->
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                
+
+
+
+                <!-- tile -->
+                
+
+
+
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+                
+
+
+                </section>
+                <!-- /tile -->
+
+
+              </div>
+              <!-- /col 6 -->
+              
+
+
+
+            </div>
+            <!-- /row -->         
+
+
+
+          </div>
+          <!-- /content container -->
+
+
+
+
+
+
+        </div>
+        <!-- Page content end -->
+
+
+
+
+
+
+      </div>
+      <!-- Make page fluid-->
+
+
+
+
+    </div>
+    <!-- Wrap all page content end -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&amp;skin=sons-of-obsidian"></script>
+
+    <script src="js/plugins/jquery.nicescroll.min.js"></script>
+
+    <script src="js/plugins/blockui/jquery.blockUI.js"></script>
+
+    <script src="js/plugins/jquery.easypiechart.min.js"></script>
+
+    <script src="js/plugins/jquery.animateNumbers.js"></script>
+
+    <script src="js/plugins/flot/jquery.flot.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.time.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.selection.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.animator.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.orderBars.js"></script>
+
+    <script src="js/plugins/rickshaw/raphael-min.js"></script> 
+    <script src="js/plugins/rickshaw/d3.v2.js"></script>
+    <script src="js/plugins/rickshaw/rickshaw.min.js"></script>
+
+    <script src="js/plugins/skycons/skycons.js"></script>
+
+    <script src="js/plugins/jquery.sparkline.min.js"></script>
+
+    <script src="js/plugins/summernote/summernote.min.js"></script>
+
+    <script src="js/plugins/chosen/chosen.jquery.min.js"></script>
+
+    <script src="js/plugins/tabdrop/bootstrap-tabdrop.min.js"></script>
+
+    <script src="js/plugins/morris/morris.min.js"></script>
+
+    <!--script src="js/charts.js"></script-->
+    <script src="js/minoral.js"></script>
+
+
+
+
+
+
+    <script src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="js/plugins/datatables/ColReorderWithResize.js"></script>
+    <script src="js/plugins/datatables/colvis/dataTables.ColVis.min.js"></script>
+    <script src="js/plugins/datatables/tabletools/ZeroClipboard.js"></script>
+    <script src="js/plugins/datatables/tabletools/dataTables.TableTools.min.js"></script>
+    <script src="js/plugins/datatables/dataTables.bootstrap.js"></script>
+
+ <script>
+    $(function(){
+      
+      // Add custom class to pagination div
+      $.fn.dataTableExt.oStdClasses.sPaging = 'dataTables_paginate paging_bootstrap paging_custom';
+
+      /*************************************************/
+      /**************** BASIC DATATABLE ****************/
+      /*************************************************/
+
+      /* Define two custom functions (asc and desc) for string sorting */
+      jQuery.fn.dataTableExt.oSort['string-case-asc']  = function(x,y) {
+          return ((x < y) ? -1 : ((x > y) ?  1 : 0));
+      };
+       
+      jQuery.fn.dataTableExt.oSort['string-case-desc'] = function(x,y) {
+          return ((x < y) ?  1 : ((x > y) ? -1 : 0));
+      };
+
+      /* Add a click handler to the rows - this could be used as a callback */
+      $("#basicDataTable tbody tr").click( function( e ) {
+        if ( $(this).hasClass('row_selected') ) {
+          $(this).removeClass('row_selected');
+        }
+        else {
+          oTable01.$('tr.row_selected').removeClass('row_selected');
+          $(this).addClass('row_selected');
+        }
+
+        // FadeIn/Out delete rows button
+        if ($('#basicDataTable tr.row_selected').length > 0) {
+          $('#deleteRow').stop().fadeIn(300);
+        } else {
+          $('#deleteRow').stop().fadeOut(300);
+        }
+      });
+
+      /* Build the DataTable with third column using our custom sort functions */
+      var oTable01 = $('#basicDataTable').dataTable({
+        "aaSorting": [ [0,'asc'], [1,'asc'] ],
+        "aoColumns": [
+            null,
+            null,
+            { "sType": 'string-case' },
+            null,
+            null
+        ]
+      });
+
+      // Append delete button to table
+      var deleteRowLink = '<a href="#" id="deleteRow" class="btn btn-red btn-xs delete-row">Delete selected row</a>'
+      $('#basicDataTable_wrapper').append(deleteRowLink);
+
+      /* Add a click handler for the delete row */
+      $('#deleteRow').click( function() {
+        var anSelected = fnGetSelected(oTable01);
+        if (anSelected.length !== 0 ) {
+          oTable01.fnDeleteRow(anSelected[0]);
+          $('#deleteRow').stop().fadeOut(300);
+        }
+      });
+
+      /* Get the rows which are currently selected */
+      function fnGetSelected(oTable01Local){
+        return oTable01Local.$('tr.row_selected');
+      };
+
+      /*******************************************************/
+      /**************** INLINE EDIT DATATABLE ****************/
+      /*******************************************************/
+
+      function restoreRow (oTable02, nRow){
+        var aData = oTable02.fnGetData(nRow);
+        var jqTds = $('>td', nRow);
+        
+        for ( var i=0, iLen=jqTds.length ; i<iLen ; i++ ) {
+          oTable02.fnUpdate( aData[i], nRow, i, false );
+        }
+        
+        oTable02.fnDraw();
+      };
+
+      function editRow (oTable02, nRow){
+        var aData = oTable02.fnGetData(nRow);
+        var jqTds = $('>td', nRow);
+        jqTds[0].innerHTML = '<input type="text" value="'+aData[0]+'">';
+        jqTds[1].innerHTML = '<input type="text" value="'+aData[1]+'">';
+        jqTds[2].innerHTML = '<input type="text" value="'+aData[2]+'">';
+        jqTds[3].innerHTML = '<input type="text" value="'+aData[3]+'">';
+        jqTds[4].innerHTML = '<input type="text" value="'+aData[4]+'">';
+        jqTds[5].innerHTML = '<a class="edit save" href="#">Save</a><a class="delete" href="#">Delete</a>';
+      };
+
+      function saveRow (oTable02, nRow){
+        var jqInputs = $('input', nRow);
+        oTable02.fnUpdate( jqInputs[0].value, nRow, 0, false );
+        oTable02.fnUpdate( jqInputs[1].value, nRow, 1, false );
+        oTable02.fnUpdate( jqInputs[2].value, nRow, 2, false );
+        oTable02.fnUpdate( jqInputs[3].value, nRow, 3, false );
+        oTable02.fnUpdate( jqInputs[4].value, nRow, 4, false );
+        oTable02.fnUpdate( '<a class="edit" href="#">Edit</a><a class="delete" href="#">Delete</a>', nRow, 5, false );
+        oTable02.fnDraw();
+      };
+
+
+
+      var oTable02 = $('#inlineEditDataTable').dataTable({
+        "aoColumnDefs": [
+          { 'bSortable': false, 'aTargets': [ "no-sort" ] }
+        ],
+      });
+
+      // Append add row button to table
+      var addRowLink = '<a href="#" id="addRow" class="btn btn-green btn-xs add-row">Add row</a>'
+      $('#inlineEditDataTable_wrapper').append(addRowLink);
+
+      var nEditing = null;
+
+      // Add row initialize
+      $('#addRow').click( function (e) {
+        e.preventDefault();
+
+        // Only allow a new row when not currently editing
+        if ( nEditing !== null ) {
+          return;
+        }
+        
+        var aiNew = oTable02.fnAddData([ '', '', '', '', '', '<a class="edit" href="">Edit</a>', '<a class="delete" href="">Delete</a>' ]);
+        var nRow = oTable02.fnGetNodes(aiNew[0]);
+        editRow(oTable02, nRow);
+        nEditing = nRow;
+
+        $(nRow).find('td:last-child').addClass('actions text-center');
+      });
+
+      // Delete row initialize
+      $(document).on( "click", "#inlineEditDataTable a.delete", function(e) {
+        e.preventDefault();
+        
+        var nRow = $(this).parents('tr')[0];
+        oTable02.fnDeleteRow( nRow );
+      });
+
+      // Edit row initialize
+      $(document).on( "click", "#inlineEditDataTable a.edit", function(e) {
+        e.preventDefault();
+         
+        /* Get the row as a parent of the link that was clicked on */
+        var nRow = $(this).parents('tr')[0];
+         
+        if (nEditing !== null && nEditing != nRow){
+          /* A different row is being edited - the edit should be cancelled and this row edited */
+          restoreRow(oTable02, nEditing);
+          editRow(oTable02, nRow);
+          nEditing = nRow;
+        }
+        else if (nEditing == nRow && this.innerHTML == "Save") {
+          /* This row is being edited and should be saved */
+          saveRow(oTable02, nEditing);
+          nEditing = null;
+        }
+        else {
+          /* No row currently being edited */
+          editRow(oTable02, nRow);
+          nEditing = nRow;
+        }
+      });
+
+      /******************************************************/
+      /**************** DRILL DOWN DATATABLE ****************/
+      /******************************************************/
+
+      var anOpen = [];
+
+      var oTable03 = $('#drillDownDataTable').dataTable({
+        "sDom":
+          "R<'row'<'col-md-6'l><'col-md-6'f>r>"+
+          "t"+
+          "<'row'<'col-md-4'i><'col-md-4'p><'col-md-4'>>",
+        "aoColumnDefs": [
+          { 'bSortable': false, 'aTargets': [ "no-sort" ] }
+        ],
+        "aaSorting": [[ 1, "asc" ]],
+        "bProcessing": true,
+        "sAjaxSource": "js/plugins/datatables/ajax/sources/objects.txt",
+        "aoColumns": [
+          {
+            "mDataProp": null,
+            "sClass": "control text-center",
+            "sDefaultContent": '<a href="#"><i class="fa fa-plus-square"></i></a>'
+          },
+          { "mDataProp": "engine" },
+          { "mDataProp": "browser" },
+          { "mDataProp": "grade" }
+        ]
+      });
+
+      $(document).on( 'click', '#drillDownDataTable td.control', function () {
+        var nTr = this.parentNode;
+        var i = $.inArray( nTr, anOpen );
+
+        $(anOpen).each( function () {
+          if ( this !== nTr ) {
+            $('td.control', this).click();
+          }
+        });
+        
+        if ( i === -1 ) {
+          $('i', this).removeClass().addClass('fa fa-minus-square red-text');
+          $(this).parent().addClass('drilled');
+          var nDetailsRow = oTable03.fnOpen( nTr, fnFormatDetails(oTable03, nTr), 'details' );
+          $('div.innerDetails', nDetailsRow).slideDown();
+          anOpen.push( nTr );
+        }
+        else {
+          $('i', this).removeClass().addClass('fa fa-plus-square');
+          $(this).parent().removeClass('drilled');
+          $('div.innerDetails', $(nTr).next()[0]).slideUp( function () {
+            oTable03.fnClose( nTr );
+            anOpen.splice( i, 1 );
+          } );
+        }
+
+        return false;
+      });
+       
+      function fnFormatDetails( oTable03, nTr ){
+        var oData = oTable03.fnGetData( nTr );
+        var sOut =
+          '<div class="innerDetails">'+
+            '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+              '<tr><td>Rendering engine:</td><td>'+oData.engine+'</td></tr>'+
+              '<tr><td>Browser:</td><td>'+oData.browser+'</td></tr>'+
+              '<tr><td>Platform:</td><td>'+oData.platform+'</td></tr>'+
+              '<tr><td>Version:</td><td>'+oData.version+'</td></tr>'+
+              '<tr><td>Grade:</td><td>'+oData.grade+'</td></tr>'+
+            '</table>'+
+          '</div>';
+        return sOut;
+      };
+
+      /****************************************************/
+      /**************** ADVANCED DATATABLE ****************/
+      /****************************************************/
+
+      var oTable04 = $('#advancedDataTable').dataTable({
+        "sDom":
+          "<'row nobottompadding'<'col-md-6'T><'col-md-6'C>r>"+
+          "<'row'<'col-md-6'l><'col-md-6'f>r>"+
+          "t"+
+          "<'row'<'col-md-4'i><'col-md-4'p><'col-md-4'>>",
+        "oTableTools": {
+          "sSwfPath": "js/plugins/datatables/tabletools/swf/copy_csv_xls_pdf.swf",
+          "aButtons": [
+            "copy",
+            "print",
+            {
+              "sExtends":    "collection",
+              "sButtonText": 'Save <span class="caret" />',
+              "aButtons":    [ "csv", "xls", "pdf" ]
+            }
+          ]
+        }
+      });
+
+      $('.ColVis_MasterButton').on('click', function(){
+        $('.ColVis_collection').addClass('dropdown-menu');
+        $('.ColVis_collection>li>label').addClass('btn btn-default');
+      });
+      
+      //initialize chosen
+      $('.dataTables_length select').chosen({disable_search_threshold: 10});
+
+    })
+      
+    </script>
+
+
+  </body>
+</html>
